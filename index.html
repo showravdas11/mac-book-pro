@@ -37,60 +37,73 @@
                 <!-- ram-button -->
                 <div>
                     <h5>Memory</h5>
-                    <button class="ram-button p-2">8GB unified memory</button>
-                    <button class="ram-button p-2">16GB unified memory</button>
+                    <button id="first-ram" class="ram-button p-2">8GB unified memory</button>
+                    <button id="second-ram" class="ram-button p-2">16GB unified memory</button>
                 </div>
 
                 <!-- storage-button -->
                 <div class="mt-5">
                     <h5>Storage</h5>
-                    <button class="storage-button p-2">256GB SSD storage</button>
-                    <button class="storage-button p-2">512GB SSD storage</button>
-                    <button class="storage-button p-2">1TB SSD storage</button>
+                    <button id="frist-storage" class="storage-button p-2">256GB SSD storage</button>
+                    <button id="second-storage" class="storage-button p-2">512GB SSD storage</button>
+                    <button id="third-storage" class="storage-button p-2">1TB SSD storage</button>
                 </div>
 
                 <!-- delivery-button  -->
                 <div class="mt-5">
                     <h5>Choose your delivery option</h5>
-                    <button class="delivery-button p-2">Friday,Aug 25 FREE Prime Delivery</button>
-                    <button class="delivery-button p-2">Friday, Aug 21 Delivery charge $20</button>
+                    <button id="delivery-charge-free" class="delivery-button p-2">Friday,Aug 25 FREE Prime
+                        Delivery</button>
+                    <button id="delivery-charge" class="delivery-button p-2">Friday, Aug 21 Delivery charge $20</button>
                 </div>
 
                 <!-- table -->
                 <div class="mt-5">
 
-                    <div class="col-4">
+                    <div class="col-6">
                         <table class="table">
                             <tbody>
                                 <tr>
                                     <th scope="row">Best price</th>
-                                    <td>$1299</td>
+                                    <td id="best">$1299</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">Extra memory cost</th>
-                                    <td>$0</td>
+                                    <td>$<span id="extra-memory-cost">0</span></td>
                                 </tr>
                                 <tr>
                                     <th scope="row">Extra storage cost</th>
-                                    <td>$0</td>
+                                    <td>$<span id="extra-storage-cost">0</span></td>
                                 </tr>
                                 <tr>
                                     <th scope="row">Delivery charge</th>
-                                    <td>$0</td>
+                                    <td>$<span id="delivery">0</span></td>
                                 </tr>
-                                <tr>
+                                <tr class="total-price">
                                     <th scope="row">Total price</th>
-                                    <td>$1299</td>
+                                    <td> $<span id="total-cost">1299</span></td>
                                 </tr>
                             </tbody>
                         </table>
+
+                        <p>Add promo code</p>
+
+                        <input type="">
+                        <button class="promo-btn px-3 py-1">Apply</button>
                     </div>
                 </div>
             </div>
         </div>
         </div>
         </div>
+
     </section>
+
+    <footer class="container">
+        <hr>
+
+        <h3 class="text-center">Total:$<span id="footer-total">1299</span></h3>
+    </footer>
 
 
 

@@ -36,3 +36,15 @@
     background-color: black;
     color: white;
 }
+
+.total-price{
+    color: black;
+    border-top: 2px solid rgb(0, 0, 0);
+}
+
+.promo-btn{
+    background-color: rgb(235, 24, 77);
+    color: white;
+    border: none;
+    font-weight: 500;
+}
