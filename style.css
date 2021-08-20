@@ -1,0 +1,38 @@
+.ram-button{
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    background: transparent;
+    border: 2px solid gray;
+}
+
+.ram-button:hover{
+    background-color: black;
+    color: white;
+}
+
+.storage-button{
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    background: transparent;
+    border: 2px solid gray;
+}
+
+.storage-button:hover{
+    background-color: black;
+    color: white;
+}
+
+.delivery-button{
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    background: transparent;
+    border: 2px solid gray;
+}
+
+.delivery-button:hover{
+    background-color: black;
+    color: white;
+}
