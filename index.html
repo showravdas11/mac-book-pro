@@ -15,90 +15,93 @@
 </head>
 
 <body>
-    <section class="container">
-        <div class="row">
-            <!-- img part -->
-            <div class="col-md-6 mt-5">
-                <img class="img-fluid" src="images/mac.png" alt="">
-            </div>
-
-            <!-- text part -->
-            <div class="col-md-6 mt-5">
-                <h2>Customize Your Blue 24-inch iMac with Apple M1 chip</h2>
-                <p class="mt-2">Apple M1 chip with 8-core CPU, 8-core GPU, and 16-core Neural Engine
-                    8GB unified memory
-                    256GB/512GB SSD storage
-                    13-inch Retina display with True Tone
-                    Magic Keyboard
-                    Touch Bar and Touch ID
-                    Force Touch trackpad
-                    Two Thunderbolt / USB 4 ports</p>
-
-                <!-- ram-button -->
-                <div>
-                    <h5>Memory</h5>
-                    <button id="first-ram" class="ram-button p-2">8GB unified memory</button>
-                    <button id="second-ram" class="ram-button p-2">16GB unified memory</button>
+    <main>
+        <section class="container">
+            <div class="row">
+                <!-- img part -->
+                <div class="col-md-6 mt-5">
+                    <img class="img-fluid" src="images/mac.png" alt="">
                 </div>
 
-                <!-- storage-button -->
-                <div class="mt-5">
-                    <h5>Storage</h5>
-                    <button id="frist-storage" class="storage-button p-2">256GB SSD storage</button>
-                    <button id="second-storage" class="storage-button p-2">512GB SSD storage</button>
-                    <button id="third-storage" class="storage-button p-2">1TB SSD storage</button>
-                </div>
+                <!-- text part -->
+                <div class="col-md-6 mt-5">
+                    <h2>Customize Your Blue 24-inch iMac with Apple M1 chip</h2>
+                    <p class="mt-2">Apple M1 chip with 8-core CPU, 8-core GPU, and 16-core Neural Engine
+                        8GB unified memory
+                        256GB/512GB SSD storage
+                        13-inch Retina display with True Tone
+                        Magic Keyboard
+                        Touch Bar and Touch ID
+                        Force Touch trackpad
+                        Two Thunderbolt / USB 4 ports</p>
 
-                <!-- delivery-button  -->
-                <div class="mt-5">
-                    <h5>Choose your delivery option</h5>
-                    <button id="delivery-charge-free" class="delivery-button p-2">Friday,Aug 25 FREE Prime
-                        Delivery</button>
-                    <button id="delivery-charge" class="delivery-button p-2">Friday, Aug 21 Delivery charge $20</button>
-                </div>
+                    <!-- ram-button -->
+                    <div>
+                        <h5>Memory</h5>
+                        <button id="first-ram" class="ram-button p-2">8GB unified memory</button>
+                        <button id="second-ram" class="ram-button p-2">16GB unified memory</button>
+                    </div>
 
-                <!-- table -->
-                <div class="mt-5">
+                    <!-- storage-button -->
+                    <div class="mt-5">
+                        <h5>Storage</h5>
+                        <button id="frist-storage" class="storage-button p-2">256GB SSD storage</button>
+                        <button id="second-storage" class="storage-button p-2">512GB SSD storage</button>
+                        <button id="third-storage" class="storage-button p-2">1TB SSD storage</button>
+                    </div>
 
-                    <div class="col-6">
-                        <table class="table">
-                            <tbody>
-                                <tr>
-                                    <th scope="row">Best price</th>
-                                    <td id="best">$<span>1299</span></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Extra memory cost</th>
-                                    <td>$<span id="extra-memory-cost">0</span></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Extra storage cost</th>
-                                    <td>$<span id="extra-storage-cost">0</span></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Delivery charge</th>
-                                    <td>$<span id="delivery">0</span></td>
-                                </tr>
-                                <tr class="total-price">
-                                    <th scope="row">Total price</th>
-                                    <td> $<span id="total-cost">1299</span></td>
-                                </tr>
-                            </tbody>
-                        </table>
+                    <!-- delivery-button  -->
+                    <div class="mt-5">
+                        <h5>Choose your delivery option</h5>
+                        <button id="delivery-charge-free" class="delivery-button p-2">Friday,Aug 25 FREE Prime
+                            Delivery</button>
+                        <button id="delivery-charge" class="delivery-button p-2">Friday, Aug 21 Delivery charge
+                            $20</button>
+                    </div>
 
-                        <p>Add promo code</p>
+                    <!-- table -->
+                    <div class="mt-5">
 
-                        <input id="use-promo" type="text">
-                        <button id="discount-code" class="promo-btn px-3 py-1">Apply</button>
+                        <div class="col-6">
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Best price</th>
+                                        <td id="best">$<span>1299</span></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Extra memory cost</th>
+                                        <td>$<span id="extra-memory-cost">0</span></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Extra storage cost</th>
+                                        <td>$<span id="extra-storage-cost">0</span></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Delivery charge</th>
+                                        <td>$<span id="delivery">0</span></td>
+                                    </tr>
+                                    <tr class="total-price">
+                                        <th scope="row">Total price</th>
+                                        <td> $<span id="total-cost">1299</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <p>Add promo code</p>
+
+                            <input id="use-promo" type="text">
+                            <button id="discount-code" class="promo-btn px-3 py-1">Apply</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        </div>
-        </div>
+            </div>
+            </div>
 
-    </section>
+        </section>
 
+    </main>
     <footer class="container">
         <hr>
 
