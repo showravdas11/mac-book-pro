@@ -107,7 +107,7 @@ document.getElementById('discount-code').addEventListener('click', function () {
 
 
     else {
-        alert("Wrong promo!!");
+        alert("You can only use the promo code once!!");
         footerTotal.innerText = footerTotalAmount;
     }
 
