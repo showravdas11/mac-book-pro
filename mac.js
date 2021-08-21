@@ -5,6 +5,8 @@ const secondRamButton = document.getElementById('second-ram');
 
 const extraMemoryCost = document.getElementById('extra-memory-cost');
 
+const footerTotal = document.getElementById('footer-total');
+
 
 //price relate
 const best = document.getElementById('best');
@@ -82,95 +84,43 @@ function grandTotal() {
     const macPrice = Number(best.innerText);
     const StoragePrice = Number(extraStorageCost.innerText);
     const deliveryTotal = Number(delivery.innerText);
-
     const total = (ramPrice + macPrice + StoragePrice + deliveryTotal);
     totalCost.innerText = total;
+    footerTotal.innerText = total;
+
 }
 
-const newTotal = document.getElementById('footer-total')
+// discount part 
+var count = 0;
+document.getElementById('discount-code').addEventListener('click', function () {
+
+    const promorFiled = document.getElementById('use-promo');
 
 
+    if (promorFiled.value == 'stevekaku') {
+        const footerTotalAmount = parseFloat(footerTotal.innerText)
+        const discount = footerTotalAmount * 0.2
+        footerTotal.innerText = footerTotalAmount - discount
+        promorFiled.value = ''
+
+    }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-function total(item, amount) {
-    const memoryCost = document.getElementById(item + '-cost');
-    memoryCost.innerText = amount;
-    costing()
-}
-
-
-// ----------
-function costing() {
-
-    const memoryCostText = document.getElementById('memory-cost');
-    const memoryCost = parseInt(memoryCostText.innerText);
-
-    const storageCostText = document.getElementById('storage-cost');
-    const storageCost = parseInt(storageCostText.innerText);
-    const deliveryCostText = document.getElementById('delivery-cost')
-    const deliveryCost = parseInt(deliveryCostText.innerText);
-    const total = document.getElementById('total-cost');
-    total.innerText = memoryCost + storageCost + deliveryCost + 1299;
-
-
-    const total2 = document.getElementById('grand-total');
-    total2.innerText = memoryCost + storageCost + deliveryCost + 1299;
-
-
-
-
-
-    return total;
-}
-
-
-// memory cost
-document.getElementById('16gb-input').addEventListener('click', function () {
-    total('memory', '180')
-})
-document.getElementById('8bg-input').addEventListener('click', function () {
-    total('memory', '0')
+    else {
+        alert("Wrong promo!!");
+        footerTotal.innerText = footerTotalAmount;
+    }
 
 })
 
-// storageCost 
-document.getElementById('256ssd-input').addEventListener('click', function () {
-    total('storage', '0')
-})
-document.getElementById('512ssd-input').addEventListener('click', function () {
-    total('storage', '100')
 
-})
-document.getElementById('1tbSSD-input').addEventListener('click', function () {
-    total('storage', '180')
-})
 
-// delivery cost 
-document.getElementById('free-delivery').addEventListener('click', function () {
-    total('delivery', '0')
-})
-document.getElementById('paid-delivery').addEventListener('click', function () {
-    total('delivery', '20')
-})
+
+
+
+
+
+
+
+
+
